@@ -13,7 +13,10 @@
   "dependencies": {
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-*",
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-*",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-*"
+    "Microsoft.AspNet.StaticFiles": "1.0.0-*",
+    "Microsoft.AspNet.Routing.Extensions": "1.0.0-*",
+    "Microsoft.Extensions.Options": "1.0.0-*",
+    "Microsoft.AspNet.Mvc":  "6.0.0-*"
   },
 
   "commands": {

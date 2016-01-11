@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
+using Microsoft.AspNet.Routing;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Workshop.Console
 {
@@ -32,12 +36,33 @@ namespace Workshop.Console
             }
         }
 
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddRouting();
+            services.AddMvc();
+
+            services.Configure<RequestCultureOptions>(options =>
+            {
+                options.DefaultCulture = new CultureInfo(Configuration["culture"] ?? "en-GB");
+            });
+        }
+
         public void Configure(IApplicationBuilder app)
         {
-            app.UseIISPlatformHandler();
-            app.UseFileServer();
+            //app.UseIISPlatformHandler();
+            //app.UseFileServer();
+            var router = new RouteBuilder(app)
+                .MapGet("", async ctx => await ctx.Response.WriteAsync("Hello from routing"))
+                .MapGet("sub", async ctx => await ctx.Response.WriteAsync("Hello from sub"))
+                .MapGet("item/{id:int}", ctx => ctx.Response.WriteAsync($"Item ID: {ctx.GetRouteValue("id")}"))
+                ;
+            
+            app.UseRouter(router.Build());
+            app.UseMvc();
 
-            app.Run(async ctx => await ctx.Response.WriteAsync($"{Configuration["greeting"]}"));
+            //app.UseRequestCulture();
+            //app.Run(async ctx => await ctx.Response.WriteAsync($"Hello {CultureInfo.CurrentCulture.DisplayName}"));
+            //app.Run(async ctx => await ctx.Response.WriteAsync($"{Configuration["greeting"]}"));
         }
     }
 }

@@ -1,3 +1,4 @@
 ﻿{
-	"greeting": "Hi from default"
+  "greeting": "Hi from default",
+  "culture":  "en-US"
 }
