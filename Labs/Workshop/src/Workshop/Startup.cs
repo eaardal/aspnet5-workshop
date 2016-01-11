@@ -5,12 +5,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Workshop
 {
     public class Startup
     {
+        public Startup(IHostingEnvironment env)
+        {
+            var c = new ConfigurationBuilder()
+                .AddJsonFile("config.json")
+                .AddJsonFile($"config.{env.EnvironmentName}.json")
+                .AddEnvironmentVariables()
+                .Build();
+        }
+
+
         public void ConfigureServices(IServiceCollection services)
         {
         }
