@@ -1,0 +1,17 @@
+01/11/2016 17:44:51 +01:00 [Information] Info msg
+01/11/2016 17:44:51 +01:00 [Warning] Warn msg
+01/11/2016 17:44:51 +01:00 [Error] Error msg
+01/11/2016 17:44:51 +01:00 [Fatal] Critical msg
+01/11/2016 17:45:03 +01:00 [Information] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:5002  PathBase:   Path: /mvcview  QueryString: 
+01/11/2016 17:45:03 +01:00 [Information] Request 1 executing
+01/11/2016 17:45:03 +01:00 [Information] Executing action method "Workshop.Console.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+01/11/2016 17:45:04 +01:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+01/11/2016 17:45:04 +01:00 [Information] User profile is available. Using '"C:\Users\eaardal\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+01/11/2016 17:45:04 +01:00 [Information] Executed action "Workshop.Console.Controllers.HomeController.Index" in 792.0656ms
+01/11/2016 17:45:04 +01:00 [Information] Request finished in 1031ms 200 text/html; charset=utf-8
+01/11/2016 17:45:39 +01:00 [Information] Protocol: HTTP/1.1  Method: GET  ContentType:   ContentLength:   Scheme: http  Host: localhost:5002  PathBase:   Path: /mvcview  QueryString: 
+01/11/2016 17:45:39 +01:00 [Information] Request 2 executing
+01/11/2016 17:45:39 +01:00 [Information] Executing action method "Workshop.Console.Controllers.HomeController.Index" with arguments (null) - ModelState is Valid'
+01/11/2016 17:45:39 +01:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+01/11/2016 17:45:39 +01:00 [Information] Executed action "Workshop.Console.Controllers.HomeController.Index" in 35.9694ms
+01/11/2016 17:45:39 +01:00 [Information] Request finished in 47ms 200 text/html; charset=utf-8

@@ -124,6 +124,31 @@
           "lib/net451/Microsoft.AspNet.DataProtection.Abstractions.dll": {}
         }
       },
+      "Microsoft.AspNet.Diagnostics/1.0.0-rc2-16468": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-rc2-16468",
+          "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc2-15957",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-rc2-16143",
+          "Microsoft.AspNet.WebUtilities": "1.0.0-rc2-16143",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.Options": "1.0.0-rc2-15977",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Diagnostics.DiagnosticSource": "4.0.0-rc2-23706"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.Diagnostics.dll": {}
+        }
+      },
       "Microsoft.AspNet.Diagnostics.Abstractions/1.0.0-rc2-16468": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1202,6 +1227,26 @@
           "lib/net451/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.0.0-rc2-15995": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-15986",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.ObjectPool/1.0.0-rc2-16000": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1310,6 +1355,42 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Serilog/2.0.0-beta-423": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Configuration",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.dll": {}
+        }
+      },
+      "Serilog.Framework.Logging/1.0.0-rc1-final-10083": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Serilog": "2.0.0-beta-423"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime"
+        ],
+        "compile": {
+          "lib/dnx451/Serilog.Framework.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Serilog.Framework.Logging.dll": {}
         }
       },
       "System.Buffers/4.0.0-rc2-23706": {
@@ -1631,6 +1712,26 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.AspNet.DataProtection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Diagnostics/1.0.0-rc2-16468": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-rc2-16468",
+          "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc2-15957",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-rc2-16143",
+          "Microsoft.AspNet.WebUtilities": "1.0.0-rc2-16143",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.Options": "1.0.0-rc2-15977",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Diagnostics.DiagnosticSource": "4.0.0-rc2-23706",
+          "System.Reflection.Extensions": "4.0.1-rc2-23706"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.dll": {}
         }
       },
       "Microsoft.AspNet.Diagnostics.Abstractions/1.0.0-rc2-16468": {
@@ -2544,6 +2645,21 @@
           "lib/dotnet5.4/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.0.0-rc2-15995": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-15986",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Console": "4.0.0-rc2-23706"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.ObjectPool/1.0.0-rc2-16000": {
         "type": "package",
         "dependencies": {
@@ -2688,6 +2804,49 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Serilog/2.0.0-beta-423": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections.Concurrent": "4.0.11-beta-23516",
+          "System.Console": "4.0.0-beta-23516",
+          "System.Diagnostics.Process": "4.1.0-beta-23516",
+          "System.Diagnostics.TraceSource": "4.0.0-beta-23516",
+          "System.Globalization": "4.0.11-beta-23516",
+          "System.IO": "4.0.11-beta-23516",
+          "System.IO.FileSystem": "4.0.1-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection.Extensions": "4.0.1-beta-23516",
+          "System.Runtime.Extensions": "4.0.11-beta-23516",
+          "System.Text.RegularExpressions": "4.0.11-beta-23516",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Thread": "4.0.0-beta-23516"
+        },
+        "compile": {
+          "lib/dotnet5.4/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Serilog.dll": {}
+        }
+      },
+      "Serilog.Framework.Logging/1.0.0-rc1-final-10083": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Serilog": "2.0.0-beta-423",
+          "System.Collections": "4.0.10-beta-23516",
+          "System.Console": "4.0.0-beta-23516",
+          "System.Linq": "4.0.0",
+          "System.Threading": "4.0.10-beta-23516"
+        },
+        "compile": {
+          "lib/dnxcore50/Serilog.Framework.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Serilog.Framework.Logging.dll": {}
         }
       },
       "System.AppContext/4.0.1-rc2-23706": {
@@ -2879,6 +3038,18 @@
         },
         "runtime": {
           "lib/dotnet5.2/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
+      "System.Diagnostics.Process/4.1.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Handles": "4.0.0",
+          "System.Text.Encoding": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.5/System.Diagnostics.Process.dll": {}
         }
       },
       "System.Diagnostics.StackTrace/4.0.1-rc2-23706": {
@@ -3749,6 +3920,31 @@
         },
         "runtime": {
           "lib/net451/Microsoft.AspNet.DataProtection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Diagnostics/1.0.0-rc2-16468": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-rc2-16468",
+          "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc2-15957",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-rc2-16143",
+          "Microsoft.AspNet.WebUtilities": "1.0.0-rc2-16143",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.Options": "1.0.0-rc2-15977",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Diagnostics.DiagnosticSource": "4.0.0-rc2-23706"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.Diagnostics.dll": {}
         }
       },
       "Microsoft.AspNet.Diagnostics.Abstractions/1.0.0-rc2-16468": {
@@ -4832,6 +5028,26 @@
           "lib/net451/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.0.0-rc2-15995": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-15986",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.ObjectPool/1.0.0-rc2-16000": {
         "type": "package",
         "frameworkAssemblies": [
@@ -4940,6 +5156,42 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Serilog/2.0.0-beta-423": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Configuration",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.dll": {}
+        }
+      },
+      "Serilog.Framework.Logging/1.0.0-rc1-final-10083": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Serilog": "2.0.0-beta-423"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime"
+        ],
+        "compile": {
+          "lib/dnx451/Serilog.Framework.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Serilog.Framework.Logging.dll": {}
         }
       },
       "System.Buffers/4.0.0-rc2-23706": {
@@ -5287,6 +5539,31 @@
         },
         "runtime": {
           "lib/net451/Microsoft.AspNet.DataProtection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Diagnostics/1.0.0-rc2-16468": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-rc2-16468",
+          "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc2-15957",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-rc2-16143",
+          "Microsoft.AspNet.WebUtilities": "1.0.0-rc2-16143",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.Options": "1.0.0-rc2-15977",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Diagnostics.DiagnosticSource": "4.0.0-rc2-23706"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.Diagnostics.dll": {}
         }
       },
       "Microsoft.AspNet.Diagnostics.Abstractions/1.0.0-rc2-16468": {
@@ -6370,6 +6647,26 @@
           "lib/net451/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.0.0-rc2-15995": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-15986",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.ObjectPool/1.0.0-rc2-16000": {
         "type": "package",
         "frameworkAssemblies": [
@@ -6478,6 +6775,42 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Serilog/2.0.0-beta-423": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Configuration",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.dll": {}
+        }
+      },
+      "Serilog.Framework.Logging/1.0.0-rc1-final-10083": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Serilog": "2.0.0-beta-423"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Runtime"
+        ],
+        "compile": {
+          "lib/dnx451/Serilog.Framework.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Serilog.Framework.Logging.dll": {}
         }
       },
       "System.Buffers/4.0.0-rc2-23706": {
@@ -6799,6 +7132,26 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.AspNet.DataProtection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Diagnostics/1.0.0-rc2-16468": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-rc2-16468",
+          "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc2-15957",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-rc2-16143",
+          "Microsoft.AspNet.WebUtilities": "1.0.0-rc2-16143",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.Options": "1.0.0-rc2-15977",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Diagnostics.DiagnosticSource": "4.0.0-rc2-23706",
+          "System.Reflection.Extensions": "4.0.1-rc2-23706"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.dll": {}
         }
       },
       "Microsoft.AspNet.Diagnostics.Abstractions/1.0.0-rc2-16468": {
@@ -7715,6 +8068,21 @@
           "lib/dotnet5.4/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.0.0-rc2-15995": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-15986",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Console": "4.0.0-rc2-23706"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.ObjectPool/1.0.0-rc2-16000": {
         "type": "package",
         "dependencies": {
@@ -7933,6 +8301,36 @@
           "runtimes/win7/lib/DNXCore50/System.Diagnostics.Debug.dll": {}
         }
       },
+      "runtime.win7.System.Diagnostics.Process/4.1.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Primitives": "4.0.0",
+          "Microsoft.Win32.Registry": "4.0.0-beta-23516",
+          "System.Collections": "4.0.10",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.IO.FileSystem": "4.0.0",
+          "System.IO.FileSystem.Primitives": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Handles": "4.0.0",
+          "System.Runtime.InteropServices": "4.0.20",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Threading.Tasks": "4.0.10",
+          "System.Threading.Thread": "4.0.0-beta-23516",
+          "System.Threading.ThreadPool": "4.0.10-beta-23516"
+        },
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/dotnet5.5/System.Diagnostics.Process.dll": {}
+        }
+      },
       "runtime.win7.System.Diagnostics.TraceSource/4.0.0-rc2-23706": {
         "type": "package",
         "dependencies": {
@@ -8127,6 +8525,49 @@
         },
         "runtime": {
           "runtimes/win7/lib/DNXCore50/System.Threading.dll": {}
+        }
+      },
+      "Serilog/2.0.0-beta-423": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections.Concurrent": "4.0.11-beta-23516",
+          "System.Console": "4.0.0-beta-23516",
+          "System.Diagnostics.Process": "4.1.0-beta-23516",
+          "System.Diagnostics.TraceSource": "4.0.0-beta-23516",
+          "System.Globalization": "4.0.11-beta-23516",
+          "System.IO": "4.0.11-beta-23516",
+          "System.IO.FileSystem": "4.0.1-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection.Extensions": "4.0.1-beta-23516",
+          "System.Runtime.Extensions": "4.0.11-beta-23516",
+          "System.Text.RegularExpressions": "4.0.11-beta-23516",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Thread": "4.0.0-beta-23516"
+        },
+        "compile": {
+          "lib/dotnet5.4/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Serilog.dll": {}
+        }
+      },
+      "Serilog.Framework.Logging/1.0.0-rc1-final-10083": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Serilog": "2.0.0-beta-423",
+          "System.Collections": "4.0.10-beta-23516",
+          "System.Console": "4.0.0-beta-23516",
+          "System.Linq": "4.0.0",
+          "System.Threading": "4.0.10-beta-23516"
+        },
+        "compile": {
+          "lib/dnxcore50/Serilog.Framework.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Serilog.Framework.Logging.dll": {}
         }
       },
       "System.AppContext/4.0.1-rc2-23706": {
@@ -8335,6 +8776,18 @@
         },
         "runtime": {
           "lib/dotnet5.2/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
+      "System.Diagnostics.Process/4.1.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Handles": "4.0.0",
+          "System.Text.Encoding": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.5/System.Diagnostics.Process.dll": {}
         }
       },
       "System.Diagnostics.StackTrace/4.0.1-rc2-23706": {
@@ -9280,6 +9733,26 @@
           "lib/dotnet5.4/Microsoft.AspNet.DataProtection.Abstractions.dll": {}
         }
       },
+      "Microsoft.AspNet.Diagnostics/1.0.0-rc2-16468": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-rc2-16468",
+          "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc2-15957",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-rc2-16143",
+          "Microsoft.AspNet.WebUtilities": "1.0.0-rc2-16143",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.Options": "1.0.0-rc2-15977",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Diagnostics.DiagnosticSource": "4.0.0-rc2-23706",
+          "System.Reflection.Extensions": "4.0.1-rc2-23706"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.dll": {}
+        }
+      },
       "Microsoft.AspNet.Diagnostics.Abstractions/1.0.0-rc2-16468": {
         "type": "package",
         "dependencies": {
@@ -10194,6 +10667,21 @@
           "lib/dotnet5.4/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.0.0-rc2-15995": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-15986",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-15995",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+          "System.Console": "4.0.0-rc2-23706"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.ObjectPool/1.0.0-rc2-16000": {
         "type": "package",
         "dependencies": {
@@ -10412,6 +10900,36 @@
           "runtimes/win7/lib/DNXCore50/System.Diagnostics.Debug.dll": {}
         }
       },
+      "runtime.win7.System.Diagnostics.Process/4.1.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Primitives": "4.0.0",
+          "Microsoft.Win32.Registry": "4.0.0-beta-23516",
+          "System.Collections": "4.0.10",
+          "System.Diagnostics.Debug": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.IO.FileSystem": "4.0.0",
+          "System.IO.FileSystem.Primitives": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Handles": "4.0.0",
+          "System.Runtime.InteropServices": "4.0.20",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Threading.Tasks": "4.0.10",
+          "System.Threading.Thread": "4.0.0-beta-23516",
+          "System.Threading.ThreadPool": "4.0.10-beta-23516"
+        },
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/dotnet5.5/System.Diagnostics.Process.dll": {}
+        }
+      },
       "runtime.win7.System.Diagnostics.TraceSource/4.0.0-rc2-23706": {
         "type": "package",
         "dependencies": {
@@ -10606,6 +11124,49 @@
         },
         "runtime": {
           "runtimes/win7/lib/DNXCore50/System.Threading.dll": {}
+        }
+      },
+      "Serilog/2.0.0-beta-423": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections.Concurrent": "4.0.11-beta-23516",
+          "System.Console": "4.0.0-beta-23516",
+          "System.Diagnostics.Process": "4.1.0-beta-23516",
+          "System.Diagnostics.TraceSource": "4.0.0-beta-23516",
+          "System.Globalization": "4.0.11-beta-23516",
+          "System.IO": "4.0.11-beta-23516",
+          "System.IO.FileSystem": "4.0.1-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection.Extensions": "4.0.1-beta-23516",
+          "System.Runtime.Extensions": "4.0.11-beta-23516",
+          "System.Text.RegularExpressions": "4.0.11-beta-23516",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Thread": "4.0.0-beta-23516"
+        },
+        "compile": {
+          "lib/dotnet5.4/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Serilog.dll": {}
+        }
+      },
+      "Serilog.Framework.Logging/1.0.0-rc1-final-10083": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Serilog": "2.0.0-beta-423",
+          "System.Collections": "4.0.10-beta-23516",
+          "System.Console": "4.0.0-beta-23516",
+          "System.Linq": "4.0.0",
+          "System.Threading": "4.0.10-beta-23516"
+        },
+        "compile": {
+          "lib/dnxcore50/Serilog.Framework.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Serilog.Framework.Logging.dll": {}
         }
       },
       "System.AppContext/4.0.1-rc2-23706": {
@@ -10814,6 +11375,18 @@
         },
         "runtime": {
           "lib/dotnet5.2/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
+      "System.Diagnostics.Process/4.1.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Handles": "4.0.0",
+          "System.Text.Encoding": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.5/System.Diagnostics.Process.dll": {}
         }
       },
       "System.Diagnostics.StackTrace/4.0.1-rc2-23706": {
@@ -11743,6 +12316,20 @@
         "Microsoft.AspNet.DataProtection.Abstractions.nuspec"
       ]
     },
+    "Microsoft.AspNet.Diagnostics/1.0.0-rc2-16468": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "w+IEwBtq/TrQ040EQjc845b72YbygDU9cv6xOe7XcY+60ozdYPBkbK7yfq8UWckeEMoTBsbcbIyZf9rMeVPdMw==",
+      "files": [
+        "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.dll",
+        "lib/dotnet5.4/Microsoft.AspNet.Diagnostics.xml",
+        "lib/net451/Microsoft.AspNet.Diagnostics.dll",
+        "lib/net451/Microsoft.AspNet.Diagnostics.xml",
+        "Microsoft.AspNet.Diagnostics.1.0.0-rc2-16468.nupkg",
+        "Microsoft.AspNet.Diagnostics.1.0.0-rc2-16468.nupkg.sha512",
+        "Microsoft.AspNet.Diagnostics.nuspec"
+      ]
+    },
     "Microsoft.AspNet.Diagnostics.Abstractions/1.0.0-rc2-16468": {
       "type": "package",
       "serviceable": true,
@@ -12557,6 +13144,19 @@
         "Microsoft.Extensions.Logging.Abstractions.nuspec"
       ]
     },
+    "Microsoft.Extensions.Logging.Console/1.0.0-rc2-15995": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "Yisk2oaoxuFbubAm/UKjItc9rY2MbdGfmVDZhbki31cCgtlbplqCawTeewHQuJgU+BHzg8D8zwwavPaYB3bK/w==",
+      "files": [
+        "lib/dotnet5.4/Microsoft.Extensions.Logging.Console.dll",
+        "lib/net451/Microsoft.Extensions.Logging.Console.dll",
+        "lib/netcore50/Microsoft.Extensions.Logging.Console.dll",
+        "Microsoft.Extensions.Logging.Console.1.0.0-rc2-15995.nupkg",
+        "Microsoft.Extensions.Logging.Console.1.0.0-rc2-15995.nupkg.sha512",
+        "Microsoft.Extensions.Logging.Console.nuspec"
+      ]
+    },
     "Microsoft.Extensions.ObjectPool/1.0.0-rc2-16000": {
       "type": "package",
       "serviceable": true,
@@ -12773,6 +13373,23 @@
         "runtimes/win8-aot/lib/netcore50/System.Diagnostics.Debug.dll"
       ]
     },
+    "runtime.win7.System.Diagnostics.Process/4.1.0-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "qCCXX+OG6430kLtN/wyjeLTTiJvOIKB2G+qBvhSqVLWe5ZTiEiSnweKUzdi7raXL0te0WfPE5tf8FuKcEKPnIA==",
+      "files": [
+        "ref/dotnet/_._",
+        "runtime.win7.System.Diagnostics.Process.4.1.0-beta-23516.nupkg",
+        "runtime.win7.System.Diagnostics.Process.4.1.0-beta-23516.nupkg.sha512",
+        "runtime.win7.System.Diagnostics.Process.nuspec",
+        "runtimes/win7/lib/dotnet5.5/System.Diagnostics.Process.dll",
+        "runtimes/win7/lib/net/_._",
+        "runtimes/win7/lib/netcore50/_._",
+        "runtimes/win7/lib/win8/_._",
+        "runtimes/win7/lib/wp8/_._",
+        "runtimes/win7/lib/wpa81/_._"
+      ]
+    },
     "runtime.win7.System.Diagnostics.TraceSource/4.0.0-rc2-23706": {
       "type": "package",
       "serviceable": true,
@@ -12931,6 +13548,38 @@
         "runtimes/win7/lib/DNXCore50/System.Threading.dll",
         "runtimes/win7/lib/netcore50/System.Threading.dll",
         "runtimes/win8-aot/lib/netcore50/System.Threading.dll"
+      ]
+    },
+    "Serilog/2.0.0-beta-423": {
+      "type": "package",
+      "sha512": "qR92J+eD+Z5Z9EJG0il8WMnqjJ/KPNDvazC0+ucy6EJKo4JzqQuDHpKubec5iG+GUVCHU2OWTxLSVg0nDvufXw==",
+      "files": [
+        "lib/dotnet5.1/Serilog.dll",
+        "lib/dotnet5.1/Serilog.xml",
+        "lib/dotnet5.4/Serilog.dll",
+        "lib/dotnet5.4/Serilog.xml",
+        "lib/net40/Serilog.dll",
+        "lib/net40/Serilog.xml",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "Serilog.2.0.0-beta-423.nupkg",
+        "Serilog.2.0.0-beta-423.nupkg.sha512",
+        "Serilog.nuspec"
+      ]
+    },
+    "Serilog.Framework.Logging/1.0.0-rc1-final-10083": {
+      "type": "package",
+      "sha512": "fjn4NqbBwzdPhye5ArzFq2oel2aTUN2kGQV4+2G5giKcYxY0Xfe2Tf/wDxBB1FPJ1CE26AYg1OjURrGTGPnfyQ==",
+      "files": [
+        "lib/dnx451/Serilog.Framework.Logging.dll",
+        "lib/dnx451/Serilog.Framework.Logging.xml",
+        "lib/dnxcore50/Serilog.Framework.Logging.dll",
+        "lib/dnxcore50/Serilog.Framework.Logging.xml",
+        "lib/net451/Serilog.Framework.Logging.dll",
+        "lib/net451/Serilog.Framework.Logging.xml",
+        "Serilog.Framework.Logging.1.0.0-rc1-final-10083.nupkg",
+        "Serilog.Framework.Logging.1.0.0-rc1-final-10083.nupkg.sha512",
+        "Serilog.Framework.Logging.nuspec"
       ]
     },
     "System.AppContext/4.0.1-rc2-23706": {
@@ -13568,6 +14217,51 @@
         "System.Diagnostics.DiagnosticSource.4.0.0-rc2-23706.nupkg",
         "System.Diagnostics.DiagnosticSource.4.0.0-rc2-23706.nupkg.sha512",
         "System.Diagnostics.DiagnosticSource.nuspec"
+      ]
+    },
+    "System.Diagnostics.Process/4.1.0-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "uXV0y5jByAnFDoQRHVpsMvqzjYeIhSSiKP0U++erIae/9DFULDlhxpzJsKVC2BU44QGyGoShUbgxBuFyMr3gPA==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Diagnostics.Process.dll",
+        "lib/net461/System.Diagnostics.Process.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet5.4/de/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/es/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/fr/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/it/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/ja/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/ko/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/ru/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/System.Diagnostics.Process.dll",
+        "ref/dotnet5.4/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/zh-hans/System.Diagnostics.Process.xml",
+        "ref/dotnet5.4/zh-hant/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/de/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/es/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/fr/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/it/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/ja/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/ko/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/ru/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/System.Diagnostics.Process.dll",
+        "ref/dotnet5.5/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/zh-hans/System.Diagnostics.Process.xml",
+        "ref/dotnet5.5/zh-hant/System.Diagnostics.Process.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Diagnostics.Process.dll",
+        "ref/net461/System.Diagnostics.Process.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtime.json",
+        "System.Diagnostics.Process.4.1.0-beta-23516.nupkg",
+        "System.Diagnostics.Process.4.1.0-beta-23516.nupkg.sha512",
+        "System.Diagnostics.Process.nuspec"
       ]
     },
     "System.Diagnostics.StackTrace/4.0.1-rc2-23706": {
@@ -16433,7 +17127,10 @@
       "Microsoft.AspNet.StaticFiles >= 1.0.0-*",
       "Microsoft.AspNet.Routing.Extensions >= 1.0.0-*",
       "Microsoft.Extensions.Options >= 1.0.0-*",
-      "Microsoft.AspNet.Mvc >= 6.0.0-*"
+      "Microsoft.AspNet.Mvc >= 6.0.0-*",
+      "Microsoft.Extensions.Logging.Console >= 1.0.0-*",
+      "Serilog.Framework.Logging >= 1.0.0-*",
+      "Microsoft.AspNet.Diagnostics >= 1.0.0-*"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": [
